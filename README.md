@@ -13,10 +13,12 @@ Adicionalmente o rastreamento com o OpenZipkin é uma adição valiosa ao seu pr
 ## QUICKSTART
 
 ### Zipkin
+
 Rodar na linha de comando:
 `docker run -d -p 9411:9411 openzipkin/zipkin`
 
 ### Apache Zookeeper
+
 Criar arquivo o docker-compose.yml abaixo e digitar `docker compose-up` na linha de comando dentro do diretório aonde está o arquivo yml.
 
 ```
@@ -57,7 +59,9 @@ services:
 ## HTTP POST REQUESTS
 
 ### Usuário
+
 `http://localhost:8083/usuarios`
+
 ```
 {
 	"nome": "Pikachu",
@@ -67,7 +71,9 @@ services:
 ```
 
 ### Categorias Memes
+
 `http://localhost:8082/categorias-meme`
+
 ```
 {
 	"nome": "Pokemons",
@@ -78,7 +84,9 @@ services:
 ```
 
 ### Memes
+
 `http://localhost:8083/usuarios`
+
 ```
 {
 	"nome": "Meme do Pikachu",
@@ -91,14 +99,17 @@ services:
 ```
 
 ## HTTP GET REQUESTS
+
 `http://localhost:8083/usuarios`
 `http://localhost:8082/categorias-meme`
 `http://localhost:8081/memelandia`
 
 ### TRACINGS
+
 ## Criação de categoria
-![Tracing categoria](https://imgur.com/a/QZ1N92y)
+
+[Imgur](https://imgur.com/dK95Mdp)
 
 ## Criação de meme
-![Tracing meme](https://imgur.com/a/LXOHsZC)
 
+[Tracing meme](https://imgur.com/a/LXOHsZC)

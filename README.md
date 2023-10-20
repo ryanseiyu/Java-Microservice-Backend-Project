@@ -14,6 +14,8 @@ Adicionalmente o rastreamento com o OpenZipkin é uma adição valiosa ao seu pr
 
 ### Zipkin
 
+Foi feito um arquivo application.properties para cada serviço portanto quando for abri-los, eles devem ser abridos em uma nova janela, abrindo o folder de cada serviço separadamente.
+
 Rodar na linha de comando:
 `docker run -d -p 9411:9411 openzipkin/zipkin`
 

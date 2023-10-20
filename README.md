@@ -108,8 +108,8 @@ services:
 
 ## Criação de categoria
 
-[Imgur](https://imgur.com/dK95Mdp)
+![Tracing categoria](/images/categoriameme.png)
 
 ## Criação de meme
 
-[Tracing meme](https://imgur.com/a/LXOHsZC)
+![Tracing meme](/images/meme.png)

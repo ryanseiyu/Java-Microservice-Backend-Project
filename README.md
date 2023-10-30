@@ -12,16 +12,16 @@ Adicionalmente o rastreamento com o OpenZipkin é uma adição valiosa ao seu pr
 
 ## QUICKSTART
 
-### Zipkin
-
 Foi feito um arquivo application.properties para cada serviço portanto quando for abri-los, eles devem ser abridos em uma nova janela, abrindo o folder de cada serviço separadamente.
+
+### Zipkin
 
 Rodar na linha de comando:
 `docker run -d -p 9411:9411 openzipkin/zipkin`
 
 ### Apache Zookeeper
 
-Criar arquivo o docker-compose.yml abaixo e digitar `docker compose-up` na linha de comando dentro do diretório aonde está o arquivo yml.
+Criar arquivo o docker-compose.yml abaixo e digitar `docker compose up` na linha de comando dentro do diretório aonde está o arquivo yml.
 
 ```
 version: '3.1'

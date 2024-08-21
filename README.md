@@ -1,28 +1,27 @@
-# EBAC_JAVA_PROJETOFINAL
+# JAVA_MICROSERVICE
 
-## INTRODUÇÃO
+## INTRODUCTION
 
-O desenvolvimento de aplicações baseadas em microserviços tem se tornado uma abordagem cada vez mais popular na construção de sistemas distribuídos, proporcionando flexibilidade, escalabilidade e alta disponibilidade. O projeto final do curso de Java na EBAC (Escola Britânica de Artes Criativas) abraça essa abordagem inovadora, propondo a criação de um sistema composto por três microserviços interconectados: Memes, Usuários e Categorias de Memes.
+The development of microservices-based applications has become an increasingly popular approach in building distributed systems, offering flexibility, scalability, and high availability. The final project of the Java course at EBAC (Escola Britânica de Artes Criativas) embraces this innovative approach, proposing the creation of a system composed of three interconnected microservices: Memes, Users, and Meme Categories.
 
-Cada um desses microserviços, a saber, Memes, Usuários e Categorias de Memes, é independente e pode ser inicializado de forma autônoma, permitindo uma manutenção e escalabilidade mais eficiente. No entanto, o verdadeiro poder desse sistema reside na sua capacidade de trabalhar de maneira harmoniosa, uma vez que esses microserviços estão interligados para criar uma experiência completa e rica para os usuários.
+Each of these microservices—Memes, Users, and Meme Categories—is independent and can be initialized autonomously, allowing for more efficient maintenance and scalability. However, the true power of this system lies in its ability to work harmoniously, as these microservices are interconnected to create a complete and rich experience for users.
 
-Para a Descoberta de Serviços foi utilizado o Spring Cloud ZooKeeper que permite que seus três microserviços (Memes, Usuários e Categorias de Memes) encontrem e interajam uns com os outros de forma dinâmica, escalável e resiliente. Isso é fundamental para criar sistemas distribuídos baseados em microserviços, onde a flexibilidade e a capacidade de adaptação a mudanças na infraestrutura são essenciais.
+For Service Discovery, Spring Cloud ZooKeeper was used, enabling the three microservices (Memes, Users, and Meme Categories) to find and interact with each other dynamically, scalably, and resiliently. This is crucial for creating distributed systems based on microservices, where flexibility and the ability to adapt to changes in infrastructure are essential.
 
-Adicionalmente o rastreamento com o OpenZipkin é uma adição valiosa ao seu projeto, fornecendo insights detalhados sobre o comportamento e o desempenho de seus microserviços interconectados, trabalhando em conjunto com a Descoberta de Serviços para criar um sistema distribuído robusto e altamente monitorado.
+Additionally, tracing with OpenZipkin is a valuable addition to your project, providing detailed insights into the behavior and performance of your interconnected microservices, working in conjunction with Service Discovery to create a robust and highly monitored distributed system.
 
 ## QUICKSTART
 
-Foi feito um arquivo application.properties para cada serviço portanto quando for abri-los, eles devem ser abridos em uma nova janela, abrindo o folder de cada serviço separadamente.
+A separate application.properties file was created for each service; therefore, when opening them, they should be opened in a new window, opening each service's folder separately.
 
 ### Zipkin
 
-Rodar na linha de comando:
+Run on command line interface:
 `docker run -d -p 9411:9411 openzipkin/zipkin`
 
 ### Apache Zookeeper
 
-Criar arquivo o docker-compose.yml abaixo e digitar `docker compose up` na linha de comando dentro do diretório aonde está o arquivo yml.
-
+Create the docker-compose.yml file below and type docker compose up in the command line within the directory where the .yml file is located.
 ```
 version: '3.1'
 
@@ -108,10 +107,10 @@ services:
 
 ### TRACINGS
 
-## Criação de categoria
+## Creating category
 
 ![Tracing categoria](/images/categoriameme.png)
 
-## Criação de meme
+## Creating meme
 
 ![Tracing meme](/images/meme.png)
